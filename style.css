@@ -54,7 +54,7 @@ body {
     justify-content: center;
     background-color: var(--white);
     /* - Font size (paragraphs): 18px */
-    font-size: 18px;
+    font-size: 22px;
     /* Regular weights: 500, 700, 800 */
 
 }
@@ -72,7 +72,7 @@ body {
     width: 640px;
     height: 480px;
     background-color: var(--white);
-    box-shadow: var( --light-lavender) 6px 6px 5px ;
+    box-shadow: var(--light-lavender) 6px 6px 5px;
     /*  */
     display: flex;
     justify-content: space-between;
@@ -94,11 +94,12 @@ body {
 
 .result-title {
     color: var(--light-lavender);
+    margin-top: 1%;
     margin-bottom: 1rem;
 }
 
 .result-score {
-    margin-top: 2rem;
+    margin-top: 1%;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -128,10 +129,9 @@ body {
 .rank {
     color: white;
     font-size: 1.5rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
     font-weight: var(--font-weight-bold);
-    
 }
 
 .rank-text {
@@ -150,6 +150,8 @@ body {
 .summary-title {
     color: black;
     font-weight: var(--font-weight-800);
+    margin-top: 1%;
+    margin-bottom: 1rem;
 }
 
 .summary-rows {
@@ -182,7 +184,7 @@ body {
 }
 
 .summary-row:nth-child(1) {
-    background-color: hsla(0, 100%, 67%, 0.2);
+    background-color: hsla(0, 100%, 67%, 0.08);
 }
 
 .summary-row:nth-child(1) .summary-item-title {
@@ -190,7 +192,7 @@ body {
 }
 
 .summary-row:nth-child(2) {
-    background-color: hsla(39, 100%, 56%, 0.2);
+    background-color: hsla(39, 100%, 56%, 0.08);
 }
 
 .summary-row:nth-child(2) .summary-item-title {
@@ -198,7 +200,7 @@ body {
 }
 
 .summary-row:nth-child(3) {
-    background-color: hsla(166, 100%, 37%, 0.2);
+    background-color: hsla(166, 100%, 37%, 0.08);
 }
 
 .summary-row:nth-child(3) .summary-item-title {
@@ -206,7 +208,7 @@ body {
 }
 
 .summary-row:nth-child(4) {
-    background-color: hsla(234, 85%, 45%, 0.2);
+    background-color: hsla(234, 85%, 45%, 0.08);
 }
 
 .summary-row:nth-child(4) .summary-item-title {
@@ -240,7 +242,6 @@ body {
 
 .attribution {
     text-align: center;
-    margin-top: 2rem;
 }
 
 
@@ -269,6 +270,10 @@ body {
 
     .card-summary {
         width: 100%;
+    }
+
+    .attribution {
+        visibility: hidden;
     }
 
 }
