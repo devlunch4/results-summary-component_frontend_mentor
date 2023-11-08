@@ -1,0 +1,262 @@
+/* Layout */
+/* Mobile */
+@media (max-width: 375px) {
+    /* Add your mobile styles here */
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+    /* Add your desktop styles here */
+}
+
+:root {
+    /* Colors */
+    /* Primary Colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    /* Background Gradients */
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+    /* Circle Gradients */
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* font weight */
+    --font-weight-500: 500;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-weight-bold: bold;
+
+    --font-size-400: 1.125rem;
+    --font-size-500: 1.25rem;
+    --font-size-600: 1.5rem;
+    --font-size-700: 1.75rem;
+    --font-size-900: 5rem;
+    --font-size-800: 2rem;
+}
+
+
+/* Typography */
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pale-blue);
+    /* - Font size (paragraphs): 18px */
+    font-size: 18px;
+    /* Regular weights: 500, 700, 800 */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+    /* https://fonts.google.com/specimen/Hanken+Grotesk */
+}
+
+.card {
+    border-radius: 2rem;
+    width: 650px;
+    background-color: var(--white);
+    box-shadow: var(--dark-gray-blue) 0px 3px 8px;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-result {
+    width: 50%;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(to bottom,
+            var(--light-slate-blue-background),
+            var(--light-royal-blue-background));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.result-title {
+    color: var(--light-lavender);
+    margin-bottom: 1rem;
+}
+
+.result-score {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,
+            var(--violet-blue-circle),
+            var(--persian-blue-circle));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-get-score {
+    color: white;
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.result-total-score {
+    color: var(--light-lavender);
+}
+
+.result-rank {
+    text-align: center;
+}
+
+.rank {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.rank-text {
+    color: var(--light-lavender);
+    width: 200px;
+}
+
+.card-summary {
+    width: 50%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.summary-title {
+    color: black;
+    font-weight: var(--font-weight-800);
+}
+
+.summary-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.summary-row {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+.summary-row:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+
+.summary-row:nth-child(1) .summary-item-title {
+    color: var(--light-red);
+}
+
+.summary-row:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.summary-row:nth-child(2) .summary-item-title {
+    color: var(--orangey-yellow);
+}
+
+.summary-row:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+
+.summary-row:nth-child(3) .summary-item-title {
+    color: var(--green-teal);
+}
+
+.summary-row:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+
+.summary-row:nth-child(4) .summary-item-title {
+    color: var(--cobalt-blue);
+}
+
+img {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.summary-item-get-score {
+    color: var(--dark-gray-blue);
+}
+
+.summary-item-total-score {
+    color: gray;
+}
+
+.btn {
+    margin-top: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background: var(--dark-gray-blue);
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom,
+            var(--light-slate-blue-background),
+            var(--light-royal-blue-background));
+}
+
+.attribution {
+    text-align: center;
+
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 640px) {
+    body {
+        align-items: flex-start;
+        background-color: white;
+        width: 100%;
+    }
+
+    .card {
+        box-shadow: none;
+        /*  */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-result {
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+    }
+
+    .rank-text {
+        width: 100%;
+    }
+
+    .card-summary {
+        width: 100%;
+    }
+
+}
