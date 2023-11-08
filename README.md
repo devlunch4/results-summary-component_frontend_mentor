@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/frontend-mentor-results-summary-component-solution-tIwLnckMfu
+- Solution URL: https://www.frontendmentor.io/solutions/frontend-mentor-results-summary-component-solution-ParO-RKT6d
 - Live Site URL: https://devlunch4.github.io/results-summary-component_frontend_mentor/index.html
 - github repo: https://github.com/devlunch4/results-summary-component_frontend_mentor
 
