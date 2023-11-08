@@ -69,9 +69,10 @@ body {
 
 .card {
     border-radius: 2rem;
-    width: 650px;
+    width: 640px;
+    height: 480px;
     background-color: var(--white);
-    box-shadow: var(--dark-gray-blue) 0px 3px 8px;
+    box-shadow: var( --light-lavender) 6px 6px 5px ;
     /*  */
     display: flex;
     justify-content: space-between;
@@ -97,6 +98,7 @@ body {
 }
 
 .result-score {
+    margin-top: 2rem;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -126,7 +128,10 @@ body {
 .rank {
     color: white;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: var(--font-weight-bold);
+    
 }
 
 .rank-text {
