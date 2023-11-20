@@ -56,6 +56,7 @@ body {
     /* - Font size (paragraphs): 18px */
     font-size: 22px;
     /* Regular weights: 500, 700, 800 */
+    padding: 1rem;
 
 }
 
@@ -281,7 +282,7 @@ footer {
     }
 
     .card-result {
-        border-radius: 0 0 1rem 1rem;
+        border-radius: 1rem;
         width: 100%;
     }
 
