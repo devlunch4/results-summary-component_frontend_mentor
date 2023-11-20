@@ -245,7 +245,7 @@ body {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -261,7 +261,6 @@ footer {
 .attribution a {
     color: blue;
 }
-
 
 @media screen and (max-width: 640px) {
 
@@ -289,6 +288,10 @@ footer {
         font-size: 0.9rem;
     }
 
+    .rank {
+        margin: 1rem;
+    }
+
     .rank-text {
         width: 100%;
     }
@@ -299,7 +302,8 @@ footer {
     }
 
     .attribution {
-        width: auto;
+        margin-top: 2rem;
+        width: 100%;
     }
 
 }
