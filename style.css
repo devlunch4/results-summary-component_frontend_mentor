@@ -267,12 +267,10 @@ footer {
     body {
         align-items: flex-start;
         background-color: white;
-        width: auto;
+        width: 100%;
     }
 
-    main {
-        padding-bottom: 1rem;
-    }
+
 
     .card {
         box-shadow: none;
@@ -280,12 +278,12 @@ footer {
         flex-direction: column;
         width: 100%;
         font-size: 0.9rem;
+        display: block;
     }
 
     .card-result {
         border-radius: 0 0 1rem 1rem;
         width: 100%;
-        font-size: 0.9rem;
     }
 
     .rank {
@@ -299,6 +297,19 @@ footer {
     .card-summary {
         width: 100%;
         font-size: 0.9rem;
+        display: block;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .btn {
+        margin-top: 0.2rem;
     }
 
     .attribution {
