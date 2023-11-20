@@ -267,10 +267,9 @@ footer {
     body {
         align-items: flex-start;
         background-color: white;
+        height: fit-content;
         width: 100%;
     }
-
-
 
     .card {
         box-shadow: none;
@@ -300,6 +299,10 @@ footer {
         display: block;
     }
 
+    .summary-row {
+        padding: 0.8rem;
+    }
+
     main {
         width: 100%;
     }
@@ -309,11 +312,12 @@ footer {
     }
 
     .btn {
-        margin-top: 0.2rem;
+        margin-top: 0.8rem;
     }
 
     .attribution {
         width: 100%;
+        font-size: 8px;
     }
 
 }
